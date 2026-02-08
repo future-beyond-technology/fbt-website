@@ -21,16 +21,16 @@ const capabilities = [
 
 export default function Capabilities() {
     return (
-        <section className="py-20 sm:py-24 lg:py-32 bg-slate-50/50" aria-labelledby="capabilities-heading">
+        <section className="py-20 sm:py-24 lg:py-32 bg-slate-50/50 dark:bg-slate-900/50" aria-labelledby="capabilities-heading">
             <Container>
                 <div className="text-center">
-                    <p className="text-xs font-medium uppercase tracking-wider text-slate-500 sm:text-sm">
+                    <p className="text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400 sm:text-sm">
                         Capabilities
                     </p>
-                    <h2 id="capabilities-heading" className="mt-3 text-xl font-semibold text-slate-900 sm:text-2xl">
+                    <h2 id="capabilities-heading" className="mt-3 text-xl font-semibold text-slate-900 dark:text-slate-50 sm:text-2xl">
                         What We Do
                     </h2>
-                    <p className="mt-3 max-w-xl mx-auto text-sm text-slate-600 sm:mt-4 sm:text-base">
+                    <p className="mt-3 max-w-xl mx-auto text-sm text-slate-600 dark:text-slate-400 sm:mt-4 sm:text-base">
                         Our work focuses on long-term impact, security, and clarity.
                     </p>
                 </div>
@@ -39,10 +39,10 @@ export default function Capabilities() {
                     {capabilities.map((c) => (
                         <div
                             key={c.title}
-                            className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow sm:p-8 hover:shadow-md"
+                            className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm transition-shadow sm:p-8 hover:shadow-md"
                         >
-                            <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{c.title}</h3>
-                            <p className="mt-2 text-sm text-slate-600 sm:mt-3 sm:text-base leading-relaxed">{c.desc}</p>
+                            <h3 className="text-base font-semibold text-slate-900 dark:text-slate-50 sm:text-lg">{c.title}</h3>
+                            <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 sm:mt-3 sm:text-base leading-relaxed">{c.desc}</p>
                         </div>
                     ))}
                 </div>

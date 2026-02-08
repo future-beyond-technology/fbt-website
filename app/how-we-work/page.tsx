@@ -77,16 +77,16 @@ export default function HowWeWorkPage() {
                 <div className="mx-auto max-w-4xl space-y-16">
                     {/* Header */}
                     <header className="max-w-3xl space-y-4">
-                        <p className="text-xs font-medium uppercase tracking-wider text-slate-500 sm:text-sm">
+                        <p className="text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400 sm:text-sm">
                             Our Approach
                         </p>
                         <h1
                             id="how-we-work-heading"
-                            className="text-2xl font-semibold text-slate-900 sm:text-3xl"
+                            className="text-2xl font-semibold text-slate-900 dark:text-slate-50 sm:text-3xl"
                         >
                             How We Work
                         </h1>
-                        <p className="text-sm text-slate-600 sm:text-base leading-relaxed">
+                        <p className="text-sm text-slate-600 dark:text-slate-400 sm:text-base leading-relaxed">
                             FBT operates with a security-first, architecture-driven mindset.
                             Our approach is designed to reduce long-term risk, improve clarity,
                             and ensure systems remain reliable and maintainable as they evolve.
@@ -95,16 +95,16 @@ export default function HowWeWorkPage() {
 
                     {/* Principles */}
                     <section className="space-y-8">
-                        <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">
+                        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50 sm:text-xl">
                             Engineering Principles
                         </h2>
                         <ul className="space-y-6">
                             {principles.map((item) => (
                                 <li key={item.title} className="space-y-2">
-                                    <h3 className="text-sm font-medium text-slate-900 sm:text-base">
+                                    <h3 className="text-sm font-medium text-slate-900 dark:text-slate-100 sm:text-base">
                                         {item.title}
                                     </h3>
-                                    <p className="text-sm text-slate-600 sm:text-base leading-relaxed">
+                                    <p className="text-sm text-slate-600 dark:text-slate-400 sm:text-base leading-relaxed">
                                         {item.description}
                                     </p>
                                 </li>
@@ -114,20 +114,20 @@ export default function HowWeWorkPage() {
 
                     {/* Phases */}
                     <section className="space-y-8">
-                        <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">
+                        <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50 sm:text-xl">
                             How Engagements Typically Progress
                         </h2>
                         <ol className="space-y-8">
                             {phases.map((phase) => (
                                 <li key={phase.step} className="flex gap-6">
-                                    <div className="text-sm font-medium text-slate-400">
+                                    <div className="text-sm font-medium text-slate-400 dark:text-slate-500">
                                         {phase.step}
                                     </div>
                                     <div className="space-y-2">
-                                        <h3 className="text-sm font-medium text-slate-900 sm:text-base">
+                                        <h3 className="text-sm font-medium text-slate-900 dark:text-slate-100 sm:text-base">
                                             {phase.title}
                                         </h3>
-                                        <p className="text-sm text-slate-600 sm:text-base leading-relaxed">
+                                        <p className="text-sm text-slate-600 dark:text-slate-400 sm:text-base leading-relaxed">
                                             {phase.description}
                                         </p>
                                     </div>

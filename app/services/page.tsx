@@ -11,13 +11,13 @@ export default function ServicesPage() {
             <Container>
                 <div className="space-y-12 sm:space-y-16">
                     <header className="text-center">
-                        <p className="text-xs font-medium uppercase tracking-wider text-slate-500 sm:text-sm">
+                        <p className="text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400 sm:text-sm">
                             Offerings
                         </p>
-                        <h1 id="services-heading" className="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl">
+                        <h1 id="services-heading" className="mt-3 text-2xl font-semibold text-slate-900 dark:text-slate-50 sm:text-3xl">
                             Our Services
                         </h1>
-                        <p className="mt-3 max-w-2xl mx-auto text-sm text-slate-600 sm:mt-4 sm:text-base">
+                        <p className="mt-3 max-w-2xl mx-auto text-sm text-slate-600 dark:text-slate-400 sm:mt-4 sm:text-base">
                             We help organizations build secure, scalable, and intelligent
                             systems — designed for longevity, not shortcuts.
                         </p>
@@ -55,9 +55,9 @@ function Service({
     description: string;
 }) {
     return (
-        <article className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow sm:p-8 hover:shadow-md">
-            <h2 className="text-lg font-semibold text-slate-900 sm:text-xl">{title}</h2>
-            <p className="mt-3 text-sm text-slate-600 sm:mt-4 sm:text-base leading-relaxed">{description}</p>
+        <article className="rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 shadow-sm transition-shadow sm:p-8 hover:shadow-md">
+            <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-50 sm:text-xl">{title}</h2>
+            <p className="mt-3 text-sm text-slate-600 dark:text-slate-400 sm:mt-4 sm:text-base leading-relaxed">{description}</p>
         </article>
     );
 }

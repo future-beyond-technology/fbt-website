@@ -63,21 +63,21 @@ export default function ContactForm() {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full min-h-[44px] rounded-lg bg-slate-900 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-70 focus-visible:ring-2 focus-visible:ring-slate-900 focus-visible:ring-offset-2"
+                    className="w-full min-h-[44px] rounded-lg bg-slate-900 dark:bg-slate-50 px-6 py-3 text-sm font-medium text-white dark:text-slate-900 transition-colors hover:bg-slate-800 dark:hover:bg-slate-200 disabled:cursor-not-allowed disabled:opacity-70 focus-visible:ring-2 focus-visible:ring-slate-900 dark:focus-visible:ring-slate-50 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-900"
                 >
                     {loading ? "Sending…" : "Send Message"}
                 </button>
             </div>
 
             {status === "success" && (
-                <p className="text-sm text-emerald-600">
+                <p className="text-sm text-emerald-600 dark:text-emerald-400">
                     Thanks for reaching out. We’ve received your message and will get back
                     to you shortly.
                 </p>
             )}
 
             {status === "error" && (
-                <p className="text-sm text-red-600">
+                <p className="text-sm text-red-600 dark:text-red-400">
                     Something went wrong while sending your message. Please try again or
                     email us directly.
                 </p>
@@ -103,7 +103,7 @@ function Input({
 
     return (
         <div>
-            <label htmlFor={id} className="block text-sm font-medium text-slate-700">
+            <label htmlFor={id} className="block text-sm font-medium text-slate-700 dark:text-slate-300">
                 {label}
             </label>
             <input
@@ -112,7 +112,7 @@ function Input({
                 type={type}
                 placeholder={placeholder}
                 required={required}
-                className="mt-2 w-full min-h-[44px] rounded-lg border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 transition-colors focus:border-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900"
+                className="mt-2 w-full min-h-[44px] rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-3 text-base text-slate-900 dark:text-slate-50 placeholder:text-slate-400 dark:placeholder:text-slate-500 transition-colors focus:border-slate-900 dark:focus:border-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-50"
             />
         </div>
     );
@@ -131,7 +131,7 @@ function Textarea({
 
     return (
         <div>
-            <label htmlFor={id} className="block text-sm font-medium text-slate-700">
+            <label htmlFor={id} className="block text-sm font-medium text-slate-700 dark:text-slate-300">
                 {label}
             </label>
             <textarea
@@ -140,7 +140,7 @@ function Textarea({
                 rows={5}
                 required
                 placeholder={placeholder}
-                className="mt-2 w-full min-h-[120px] rounded-lg border border-slate-300 bg-white px-4 py-3 text-base text-slate-900 placeholder:text-slate-400 transition-colors focus:border-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900"
+                className="mt-2 w-full min-h-[120px] rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 px-4 py-3 text-base text-slate-900 dark:text-slate-50 placeholder:text-slate-400 dark:placeholder:text-slate-500 transition-colors focus:border-slate-900 dark:focus:border-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-900 dark:focus:ring-slate-50"
             />
         </div>
     );
