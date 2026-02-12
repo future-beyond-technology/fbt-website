@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import ClientsShowcase from "@/components/home/ClientsShowcase";
 import Capabilities from "@/components/home/Capabilities";
 import HowWeWorkPreview from "@/components/home/HowWeWorkPreview";
 import CTA from "@/components/home/CTA";
@@ -14,6 +15,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <ClientsShowcase />
       <Capabilities />
       <HowWeWorkPreview />
       <CTA />
